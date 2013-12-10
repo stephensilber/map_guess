@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC8B916318578501001D9FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B916218578501001D9FCA /* Foundation.framework */; };
+		DC8B916518578501001D9FCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B916418578501001D9FCA /* CoreGraphics.framework */; };
+		DC8B916718578501001D9FCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B916618578501001D9FCA /* UIKit.framework */; };
+		DC8B916D18578501001D9FCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC8B916B18578501001D9FCA /* InfoPlist.strings */; };
+		DC8B916F18578501001D9FCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B916E18578501001D9FCA /* main.m */; };
+		DC8B917318578501001D9FCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B917218578501001D9FCA /* AppDelegate.m */; };
+		DC8B917618578501001D9FCA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8B917418578501001D9FCA /* Main_iPhone.storyboard */; };
+		DC8B917918578501001D9FCA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8B917718578501001D9FCA /* Main_iPad.storyboard */; };
+		DC8B917C18578501001D9FCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B917B18578501001D9FCA /* ViewController.m */; };
+		DC8B917E18578501001D9FCA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8B917D18578501001D9FCA /* Images.xcassets */; };
+		DC8B918518578501001D9FCA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B918418578501001D9FCA /* XCTest.framework */; };
+		DC8B918618578501001D9FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B916218578501001D9FCA /* Foundation.framework */; };
+		DC8B918718578501001D9FCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B916618578501001D9FCA /* UIKit.framework */; };
+		DC8B918F18578501001D9FCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC8B918D18578501001D9FCA /* InfoPlist.strings */; };
+		DC8B919118578501001D9FCA /* GeoGuesserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B919018578501001D9FCA /* GeoGuesserTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC8B918818578501001D9FCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8B915718578500001D9FCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC8B915E18578500001D9FCA;
+			remoteInfo = GeoGuesser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC8B915F18578500001D9FCA /* GeoGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8B916218578501001D9FCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC8B916418578501001D9FCA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DC8B916618578501001D9FCA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DC8B916A18578501001D9FCA /* GeoGuesser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoGuesser-Info.plist"; sourceTree = "<group>"; };
+		DC8B916C18578501001D9FCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC8B916E18578501001D9FCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC8B917018578501001D9FCA /* GeoGuesser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoGuesser-Prefix.pch"; sourceTree = "<group>"; };
+		DC8B917118578501001D9FCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC8B917218578501001D9FCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC8B917518578501001D9FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DC8B917818578501001D9FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		DC8B917A18578501001D9FCA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DC8B917B18578501001D9FCA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DC8B917D18578501001D9FCA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC8B918318578501001D9FCA /* GeoGuesserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoGuesserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8B918418578501001D9FCA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DC8B918C18578501001D9FCA /* GeoGuesserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoGuesserTests-Info.plist"; sourceTree = "<group>"; };
+		DC8B918E18578501001D9FCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC8B919018578501001D9FCA /* GeoGuesserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoGuesserTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC8B915C18578500001D9FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8B916518578501001D9FCA /* CoreGraphics.framework in Frameworks */,
+				DC8B916718578501001D9FCA /* UIKit.framework in Frameworks */,
+				DC8B916318578501001D9FCA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8B918018578501001D9FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8B918518578501001D9FCA /* XCTest.framework in Frameworks */,
+				DC8B918718578501001D9FCA /* UIKit.framework in Frameworks */,
+				DC8B918618578501001D9FCA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC8B915618578500001D9FCA = {
+			isa = PBXGroup;
+			children = (
+				DC8B916818578501001D9FCA /* GeoGuesser */,
+				DC8B918A18578501001D9FCA /* GeoGuesserTests */,
+				DC8B916118578500001D9FCA /* Frameworks */,
+				DC8B916018578500001D9FCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC8B916018578500001D9FCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC8B915F18578500001D9FCA /* GeoGuesser.app */,
+				DC8B918318578501001D9FCA /* GeoGuesserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC8B916118578500001D9FCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC8B916218578501001D9FCA /* Foundation.framework */,
+				DC8B916418578501001D9FCA /* CoreGraphics.framework */,
+				DC8B916618578501001D9FCA /* UIKit.framework */,
+				DC8B918418578501001D9FCA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC8B916818578501001D9FCA /* GeoGuesser */ = {
+			isa = PBXGroup;
+			children = (
+				DC8B917118578501001D9FCA /* AppDelegate.h */,
+				DC8B917218578501001D9FCA /* AppDelegate.m */,
+				DC8B917418578501001D9FCA /* Main_iPhone.storyboard */,
+				DC8B917718578501001D9FCA /* Main_iPad.storyboard */,
+				DC8B917A18578501001D9FCA /* ViewController.h */,
+				DC8B917B18578501001D9FCA /* ViewController.m */,
+				DC8B917D18578501001D9FCA /* Images.xcassets */,
+				DC8B916918578501001D9FCA /* Supporting Files */,
+			);
+			path = GeoGuesser;
+			sourceTree = "<group>";
+		};
+		DC8B916918578501001D9FCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC8B916A18578501001D9FCA /* GeoGuesser-Info.plist */,
+				DC8B916B18578501001D9FCA /* InfoPlist.strings */,
+				DC8B916E18578501001D9FCA /* main.m */,
+				DC8B917018578501001D9FCA /* GeoGuesser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC8B918A18578501001D9FCA /* GeoGuesserTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC8B919018578501001D9FCA /* GeoGuesserTests.m */,
+				DC8B918B18578501001D9FCA /* Supporting Files */,
+			);
+			path = GeoGuesserTests;
+			sourceTree = "<group>";
+		};
+		DC8B918B18578501001D9FCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC8B918C18578501001D9FCA /* GeoGuesserTests-Info.plist */,
+				DC8B918D18578501001D9FCA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC8B915E18578500001D9FCA /* GeoGuesser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC8B919418578501001D9FCA /* Build configuration list for PBXNativeTarget "GeoGuesser" */;
+			buildPhases = (
+				DC8B915B18578500001D9FCA /* Sources */,
+				DC8B915C18578500001D9FCA /* Frameworks */,
+				DC8B915D18578500001D9FCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoGuesser;
+			productName = GeoGuesser;
+			productReference = DC8B915F18578500001D9FCA /* GeoGuesser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC8B918218578501001D9FCA /* GeoGuesserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC8B919718578501001D9FCA /* Build configuration list for PBXNativeTarget "GeoGuesserTests" */;
+			buildPhases = (
+				DC8B917F18578501001D9FCA /* Sources */,
+				DC8B918018578501001D9FCA /* Frameworks */,
+				DC8B918118578501001D9FCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC8B918918578501001D9FCA /* PBXTargetDependency */,
+			);
+			name = GeoGuesserTests;
+			productName = GeoGuesserTests;
+			productReference = DC8B918318578501001D9FCA /* GeoGuesserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC8B915718578500001D9FCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Stephen Silber";
+				TargetAttributes = {
+					DC8B918218578501001D9FCA = {
+						TestTargetID = DC8B915E18578500001D9FCA;
+					};
+				};
+			};
+			buildConfigurationList = DC8B915A18578500001D9FCA /* Build configuration list for PBXProject "GeoGuesser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC8B915618578500001D9FCA;
+			productRefGroup = DC8B916018578500001D9FCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC8B915E18578500001D9FCA /* GeoGuesser */,
+				DC8B918218578501001D9FCA /* GeoGuesserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC8B915D18578500001D9FCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8B917918578501001D9FCA /* Main_iPad.storyboard in Resources */,
+				DC8B917E18578501001D9FCA /* Images.xcassets in Resources */,
+				DC8B917618578501001D9FCA /* Main_iPhone.storyboard in Resources */,
+				DC8B916D18578501001D9FCA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8B918118578501001D9FCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8B918F18578501001D9FCA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC8B915B18578500001D9FCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8B917C18578501001D9FCA /* ViewController.m in Sources */,
+				DC8B917318578501001D9FCA /* AppDelegate.m in Sources */,
+				DC8B916F18578501001D9FCA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8B917F18578501001D9FCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8B919118578501001D9FCA /* GeoGuesserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC8B918918578501001D9FCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC8B915E18578500001D9FCA /* GeoGuesser */;
+			targetProxy = DC8B918818578501001D9FCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC8B916B18578501001D9FCA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8B916C18578501001D9FCA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DC8B917418578501001D9FCA /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8B917518578501001D9FCA /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DC8B917718578501001D9FCA /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8B917818578501001D9FCA /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		DC8B918D18578501001D9FCA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8B918E18578501001D9FCA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC8B919218578501001D9FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC8B919318578501001D9FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC8B919518578501001D9FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoGuesser/GeoGuesser-Prefix.pch";
+				INFOPLIST_FILE = "GeoGuesser/GeoGuesser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DC8B919618578501001D9FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoGuesser/GeoGuesser-Prefix.pch";
+				INFOPLIST_FILE = "GeoGuesser/GeoGuesser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DC8B919818578501001D9FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoGuesser.app/GeoGuesser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoGuesser/GeoGuesser-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GeoGuesserTests/GeoGuesserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DC8B919918578501001D9FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoGuesser.app/GeoGuesser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoGuesser/GeoGuesser-Prefix.pch";
+				INFOPLIST_FILE = "GeoGuesserTests/GeoGuesserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC8B915A18578500001D9FCA /* Build configuration list for PBXProject "GeoGuesser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8B919218578501001D9FCA /* Debug */,
+				DC8B919318578501001D9FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC8B919418578501001D9FCA /* Build configuration list for PBXNativeTarget "GeoGuesser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8B919518578501001D9FCA /* Debug */,
+				DC8B919618578501001D9FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC8B919718578501001D9FCA /* Build configuration list for PBXNativeTarget "GeoGuesserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8B919818578501001D9FCA /* Debug */,
+				DC8B919918578501001D9FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC8B915718578500001D9FCA /* Project object */;
+}
