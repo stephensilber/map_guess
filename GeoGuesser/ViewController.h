@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleMaps/GoogleMaps.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <GMSPanoramaViewDelegate, GMSMapViewDelegate> {
+    IBOutlet UIView *panoContainerView;
+    IBOutlet GMSPanoramaView *panoView;
+    IBOutlet UIView *containerView;
+    IBOutlet GMSMapView *guessView;
+    IBOutlet UILabel *detailTextLabel;
+    IBOutlet UIButton *makeGuessButton;
+}
 
 @end
