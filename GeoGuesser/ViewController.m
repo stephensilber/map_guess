@@ -56,13 +56,15 @@
     CLLocation *pano_location = [[CLLocation alloc] initWithLatitude:pano_coord.latitude longitude:pano_coord.longitude];
     CLLocationDistance meters = [guess_location distanceFromLocation:pano_location];
     
+    UIImage *pano_marker_icon = [GMSMarker markerImageWithColor:[UIColor greenColor]];
     GMSMarker *pano_marker = [GMSMarker markerWithPosition:pano_coord];
+    [pano_marker setIcon:pano_marker_icon];
     pano_marker.title = @"Actual Location";
     pano_marker.map = guessView;
     
     GMSMutablePath *guess_path = [[GMSMutablePath alloc] init];
-    [guess_path addCoordinate:pano_coord];
     [guess_path addCoordinate:guess_cord];
+    [guess_path addCoordinate:pano_coord];
     
     GMSPolyline *guess_line = [GMSPolyline polylineWithPath:guess_path];
     guess_line.map = guessView;
@@ -70,17 +72,15 @@
     NSLog(@"Guess in kilometers: %f", meters/1000);
 }
 
-- (void)viewDidLoad
-{
-
-    [super viewDidLoad];
+- (IBAction) setupViewWithPanorama {
+    
     [guessView setCamera:[GMSCameraPosition cameraWithLatitude:1.285 longitude:103.848 zoom:0]];
     panoView = [[GMSPanoramaView alloc] initWithFrame:panoContainerView.frame];
     [panoView setDelegate:self];
     [guessView setDelegate:self];
     [panoView setStreetNamesHidden:YES];
     [panoContainerView addSubview:panoView];
-
+    
     NSString *filepath = [[NSBundle mainBundle] pathForResource:@"coords" ofType:@"tsv"];
     NSString *fileContents = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:nil];
     coord_arr = [fileContents componentsSeparatedByString:@"\n"];
@@ -92,15 +92,23 @@
             pano_coord = panorama.coordinate;
         } else {
             NSLog(@"Coord did not work: %f %f", panorama.coordinate.latitude, panorama.coordinate.longitude);
+            [self setupViewWithPanorama];
         }
         if (error) {
             NSLog(@"Error: %@", error);
         }
     }];
-    
+}
+
+- (void)viewDidLoad
+{
+
+    [super viewDidLoad];
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleGuessView:)];
     [singleTap setNumberOfTapsRequired:1];
     [self.navigationController.navigationBar addGestureRecognizer:singleTap];
+
+    [self setupViewWithPanorama];
 }
 
 - (void)didReceiveMemoryWarning
